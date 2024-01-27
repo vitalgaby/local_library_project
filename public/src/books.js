@@ -1,5 +1,3 @@
-
-
 function findAuthorById(authors, id) {
   // returns the author object when given a particular ID
   // used find() to find the author object with the matching ID
