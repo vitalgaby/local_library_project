@@ -1,16 +1,30 @@
 function findAccountById(accounts, id) {
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) method here. 
+  // returns the account object when given a particular ID
+  return accounts.find(account => account.id === id);
 }
 
 function sortAccountsByLastName(accounts) {
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method here. 
+  // creates a copy of the orriginal array using spread syntax
+  const sorted = [...accounts]; 
+  
+  sorted.sort((acnt1, acnt2) => 
+  // sorts the array using the compare function below
+  // converts the names to lowercase before comparing
+    acnt1.name.last.toLowerCase() > acnt2.name.last.toLowerCase() ? 1 : -1 
+    // This causes .sort() to sort the array in ascending alphabetical order by last name
+  );
+  // it returns the sorted copied array.
+  return sorted;
 }
 
+// to specify this function, I returned the function alphabetically and sorted by last name.
+
 function getAccountFullNames(accounts) {
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method here.
+  // returns an array of full names for each account
+  // this function uses the map() method to iterate through each account
+  return accounts.map(account => {
+    return `${account.name.last} ${account.name.first}`;
+  });
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
