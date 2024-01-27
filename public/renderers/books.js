@@ -1,4 +1,4 @@
-// Templates
+// 
 function returnedBadgeTemplate(returned) {
   return `
     <span class="badge badge-${returned ? "light" : "dark"}">
