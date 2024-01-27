@@ -14,6 +14,9 @@
 <ol>NPM test:</ol>
 <img width="698" alt="Screenshot 2024-01-26 at 11 47 06 PM" src="https://github.com/vitalgaby/local_library_project/assets/146971724/fe5d8758-3fad-4a83-8c64-fa45d16e322b">
 
+<ol>Also, I added in line 39 a loop/split() array to properly capitalize the book title names.</ol>
+<img width="353" alt="Screenshot 2024-01-27 at 12 50 45 AM" src="https://github.com/vitalgaby/local_library_project/assets/146971724/1376ac6b-41e2-4f14-bd0c-72743f295f27">
+
 # local_library_proje/public/src/home.js
 <ol>I used the .length array to return the total number of books & accounts.</ol>
 <ol>Integrated with the Borrowed Books function I used filter() & .length array to filter the books borrowed vs returned; and return the amount of books borrowed.</ol>
