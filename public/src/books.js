@@ -8,7 +8,7 @@ function findAuthorById(authors, id) {
 
 
 function findBookById(books, id) {
-  // should return the book object when given a particular ID
+  // returns the book object when given a particular ID
   // used find() to find the books object with the matching ID
   return books.find(book => book.id === id);
 }
@@ -33,6 +33,9 @@ function partitionBooksByBorrowedStatus(books) {
   );
 }
 
+// added this function to properly capitalize the title of each book
+// used the split() method to split the title into an array of words
+// used the loop to capitalize each word in the array
 function capitalizeTitle(title) {
   const words = title.split(" ");
   for (let i = 0; i < words.length; i++) {
