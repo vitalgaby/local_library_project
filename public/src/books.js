@@ -1,9 +1,14 @@
 function findAuthorById(authors, id) {
-  // YOUR SOLUTION HERE
+  // returns the author object when given a particular ID
+  // used find() to find the author object with the matching ID
+ return authors.find(author => author.id === id);
 }
 
+
 function findBookById(books, id) {
-  // YOUR SOLUTION HERE
+  // should return the book object when given a particular ID
+  // used find() to find the books object with the matching ID
+  return books.find(book => book.id === id);
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
