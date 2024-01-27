@@ -17,8 +17,6 @@ function sortAccountsByLastName(accounts) {
   return sorted;
 }
 
-// to specify this function, I returned the function alphabetically and sorted by last name.
-
 function getAccountFullNames(accounts) {
 
   // Used map() to transform each account into a full name
@@ -64,3 +62,5 @@ module.exports = {
   getTotalNumberOfBorrows,
   getBooksPossessedByAccount,
 };
+
+
