@@ -1,3 +1,5 @@
+
+
 function findAuthorById(authors, id) {
   // returns the author object when given a particular ID
   // used find() to find the author object with the matching ID
@@ -10,6 +12,8 @@ function findBookById(books, id) {
   // used find() to find the books object with the matching ID
   return books.find(book => book.id === id);
 }
+
+
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
 function partitionBooksByBorrowedStatus(books) {
@@ -28,6 +32,17 @@ function partitionBooksByBorrowedStatus(books) {
     [[], []]
   );
 }
+
+function capitalizeTitle(title) {
+  const words = title.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+  }
+  return words.join(" ");
+}
+books.forEach(book => {
+  book.title = capitalizeTitle(book.title);
+});
 
 function getBorrowersForBook(book, accounts) {
   const accountsById = accounts.reduce((acc, account) => {

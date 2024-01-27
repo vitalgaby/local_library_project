@@ -10,8 +10,8 @@ function sortAccountsByLastName(accounts) {
   sorted.sort((acnt1, acnt2) => 
   // sorts the array using the compare function below
   // converts the names to lowercase before comparing
-    acnt1.name.last.toLowerCase() > acnt2.name.last.toLowerCase() ? 1 : -1 
-    // This causes .sort() to sort the array in ascending alphabetical order by last name
+  acnt1.name.last.toUpperCase() > acnt2.name.last.toUpperCase() ? 1 : -1 
+  // This causes .sort() to sort the array in ascending alphabetical order by last name
   );
   // it returns the sorted copied array.
   return sorted;
