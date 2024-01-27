@@ -20,11 +20,18 @@ function sortAccountsByLastName(accounts) {
 // to specify this function, I returned the function alphabetically and sorted by last name.
 
 function getAccountFullNames(accounts) {
-  // returns an array of full names for each account
-  // this function uses the map() method to iterate through each account
+
+  // Used map() to transform each account into a full name
   return accounts.map(account => {
-    return `${account.name.last} ${account.name.first}`;
+
+    // Gets first and last name variables
+    const firstName = account.name.first; 
+    const lastName = account.name.last;
+
+    // Returns full name string with first and last names
+    return `${firstName} ${lastName}`; 
   });
+
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
